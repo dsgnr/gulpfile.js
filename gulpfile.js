@@ -35,8 +35,8 @@ gulp.task('sass', function() {
 // Initiate BrowserSync. Check for CSS changes and reload. Don't forget to change the proxy to the correct domain!
 gulp.task('browser-sync', function (cb) {
 browserSync.init({
-    proxy: "www.designsbytouch.local",
-    external: "www.designsbytouch.local"    
+    proxy: "www.danielhand.local",
+    external: "www.danielhand.local"    
 }, function() {
 			gulp.watch('style.css').on('change', function () {
             gulp.src('style.css')
